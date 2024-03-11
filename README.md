@@ -44,7 +44,7 @@ Being:
 + InteropFramework: the interoperability framework that contains methods for writing and reading PROV documents to files or streams. It works based on media types and formats. The supported formats are: PROVN, PROVX, JSON, JSONLD, DOT, JPEG, PNG, SVG, PDF (available at org.openprovenance.prov.interop.Formats)
 + Document: the interface for a PROV Document.
 + readDocumentFromFile: in this case we are reading from a file.
-  +  but we could also read from a stream: readDocument(InputStream is, ProvFormat format);
+  +  we could also read from a stream: readDocument(InputStream is, ProvFormat format);
   +  or from a URL. In this case, the Content-type HTTP header field is considered for the mime-type: readDocumentFromURL(String url).
 + writeDocument: writes the document in the desired format, in this case "jpeg". The Format specification could be omitted and serialization would occur according to the file extension.
 
