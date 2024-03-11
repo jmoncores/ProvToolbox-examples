@@ -40,7 +40,7 @@ POM
         </dependency>
         (...)
 ```
-Being:
+
 + InteropFramework: the interoperability framework that contains methods for writing and reading PROV documents to files or streams. It works based on media types and formats. The supported formats are: PROVN, PROVX, JSON, JSONLD, DOT, JPEG, PNG, SVG, PDF (available at org.openprovenance.prov.interop.Formats)
 + Document: the interface for a PROV Document.
 + readDocumentFromFile: in this case we are reading from a file.
